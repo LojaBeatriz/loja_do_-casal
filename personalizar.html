@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personalizar | BioNeon</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/config.js" defer></script>
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="index.html">✦ Bio<span>Neon</span></a>
+<a href="index.html#modelos">Voltar aos modelos</a>
+</header>
+
+<main class="section form-section">
+<div class="section-head">
+<p class="eyebrow">SEU PEDIDO</p>
+<h1>Personalize sua BioNeon</h1>
+<p class="muted">Preencha os dados para enviar seu pedido.</p>
+</div>
+
+<div class="form-card">
+<div id="selected-product" class="selected-product"></div>
+
+<form id="order-form">
+<label>Seu nome
+<input name="name" required maxlength="70" placeholder="Seu nome">
+</label>
+
+<label>Nome que aparecerá na bio
+<input name="displayName" required maxlength="50" placeholder="Nome do perfil">
+</label>
+
+<label>Instagram
+<input name="instagram" placeholder="@usuario">
+</label>
+
+<label>TikTok
+<input name="tiktok" placeholder="@usuario">
+</label>
+
+<label>YouTube
+<input name="youtube" placeholder="Link do canal">
+</label>
+
+<label>WhatsApp ou outro link
+<input name="other" placeholder="https://...">
+</label>
+
+<label>Cor principal
+<select name="color">
+<option>Roxo neon</option>
+<option>Rosa neon</option>
+<option>Azul neon</option>
+<option>Verde neon</option>
+<option>Preto e branco</option>
+</select>
+</label>
+
+<label>Observações
+<textarea name="notes" rows="4" maxlength="500"></textarea>
+</label>
+
+<p class="muted small">Não informe senhas de redes sociais.</p>
+
+<button class="btn full" type="submit">
+Enviar pedido pelo WhatsApp
+</button>
+</form>
+</div>
+</main>
+
+<footer>BioNeon · Atendimento humano</footer>
+</body>
+</html>
